@@ -1,0 +1,12 @@
+{
+  "name": "gpt-session-converter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Convert ChatGPT session JSON into CPA, sub2api, Cockpit, 9router, and Codex auth.json formats.",
+  "bin": {
+    "gpt-session-converter": "./session-converter-cli.js"
+  },
+  "scripts": {
+    "test": "node --test session-converter.test.mjs session-converter-cli.test.mjs"
+  }
+}
