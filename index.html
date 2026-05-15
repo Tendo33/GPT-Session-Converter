@@ -106,121 +106,88 @@
       .app {
         width: min(1280px, calc(100vw - 32px));
         margin: 0 auto;
-        padding: 24px 0 32px;
+        padding: 20px 0 28px;
       }
 
       .app-header {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
-        gap: 16px;
-        align-items: start;
-        margin-bottom: 16px;
-      }
-
-      .eyebrow {
-        margin: 0 0 8px;
-        color: var(--text-soft);
-        font-size: 0.76rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+        margin-bottom: 12px;
       }
 
       h1 {
         margin: 0;
-        font-size: clamp(1.5rem, 2.4vw, 2rem);
-        line-height: 1.2;
+        font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+        line-height: 1.16;
         letter-spacing: -0.02em;
       }
 
       .app-lead {
-        max-width: 68ch;
-        margin: 10px 0 0;
+        max-width: 44ch;
+        margin: 6px 0 0;
         color: var(--text-muted);
-        font-size: 0.98rem;
-        line-height: 1.6;
+        font-size: 0.9rem;
+        line-height: 1.45;
       }
 
-      .header-side {
-        display: grid;
-        gap: 10px;
-        justify-items: end;
+      .app-footer {
+        margin-top: 12px;
+        color: var(--text-soft);
+        font-size: 0.8rem;
       }
 
-      .meta-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        justify-content: flex-end;
+      .app-footer a {
+        color: inherit;
+        text-decoration: none;
       }
 
-      .meta-chip {
-        display: inline-flex;
-        align-items: center;
-        min-height: 32px;
-        padding: 6px 10px;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: var(--surface);
+      .app-footer a:hover {
         color: var(--text-muted);
-        font-size: 0.84rem;
-        font-weight: 600;
-        white-space: nowrap;
       }
 
       .github-link {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
-        min-height: 40px;
-        padding: 0 12px;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: var(--surface);
-        color: var(--text);
-        font-size: 0.9rem;
+        gap: 6px;
+        color: inherit;
+        font-size: inherit;
         font-weight: 600;
-        text-decoration: none;
-        box-shadow: var(--shadow-sm);
       }
 
       .github-link svg {
-        width: 18px;
-        height: 18px;
+        width: 15px;
+        height: 15px;
         fill: currentColor;
         flex: 0 0 auto;
       }
 
       .toolbar {
         display: grid;
-        gap: 12px;
+        gap: 8px;
         margin-bottom: 16px;
-        padding: 14px 16px;
+        padding: 10px 12px;
         border: 1px solid var(--border);
         border-radius: var(--radius-lg);
         background: var(--surface);
-        box-shadow: var(--shadow-sm);
       }
 
       .toolbar-head {
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto;
-        gap: 12px;
+        gap: 10px;
         align-items: start;
       }
 
       .toolbar-copy strong {
         display: block;
-        margin-bottom: 4px;
-        font-size: 0.9rem;
+        margin-bottom: 2px;
+        font-size: 0.8rem;
         font-weight: 700;
       }
 
       .toolbar-copy p {
         margin: 0;
         color: var(--text-muted);
-        font-size: 0.9rem;
-        line-height: 1.5;
+        font-size: 0.82rem;
+        line-height: 1.45;
       }
 
       .segmented {
@@ -231,13 +198,13 @@
 
       .segmented button {
         flex: 1 1 120px;
-        min-height: 44px;
-        padding: 10px 14px;
+        min-height: 40px;
+        padding: 8px 12px;
         border: 1px solid var(--border);
         border-radius: 999px;
         background: var(--surface);
-        color: var(--text-muted);
-        font-size: 0.92rem;
+        color: var(--text-soft);
+        font-size: 0.9rem;
         font-weight: 600;
         cursor: pointer;
       }
@@ -259,10 +226,10 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        min-height: 44px;
-        padding: 10px 14px;
+        min-height: 40px;
+        padding: 8px 12px;
         border-radius: 999px;
-        font-size: 0.92rem;
+        font-size: 0.88rem;
         font-weight: 600;
         cursor: pointer;
       }
@@ -286,23 +253,22 @@
 
       .format-note {
         color: var(--text-muted);
-        font-size: 0.88rem;
+        font-size: 0.82rem;
         line-height: 1.5;
       }
 
       .workspace {
         display: grid;
         grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-        gap: 16px;
+        gap: 14px;
       }
 
       .panel {
         min-width: 0;
-        padding: 16px;
+        padding: 12px;
         border: 1px solid var(--border);
         border-radius: var(--radius-lg);
         background: var(--surface);
-        box-shadow: var(--shadow-sm);
       }
 
       .panel-head {
@@ -310,69 +276,49 @@
         align-items: flex-start;
         justify-content: space-between;
         gap: 12px;
-        margin-bottom: 14px;
+        margin-bottom: 8px;
       }
 
       .panel-head h2 {
         margin: 0;
-        font-size: 1.08rem;
+        font-size: 1rem;
         line-height: 1.3;
       }
 
       .panel-head p {
-        max-width: 56ch;
-        margin: 4px 0 0;
+        margin: 2px 0 0;
         color: var(--text-muted);
-        font-size: 0.9rem;
-        line-height: 1.5;
+        font-size: 0.82rem;
+        line-height: 1.45;
       }
 
-      .helper-list {
+      .helper-strip {
         display: grid;
-        gap: 10px;
-        margin-bottom: 14px;
-      }
-
-      .helper-item {
-        padding: 12px 14px;
+        gap: 6px;
+        margin-bottom: 8px;
+        padding: 8px 10px;
         border: 1px solid var(--border);
         border-radius: var(--radius-md);
         background: var(--surface-muted);
       }
 
-      .helper-item strong {
-        display: block;
-        margin-bottom: 5px;
-        font-size: 0.88rem;
-        font-weight: 700;
-      }
-
-      .helper-item p {
+      .helper-strip p {
         margin: 0;
         color: var(--text-muted);
-        font-size: 0.88rem;
-        line-height: 1.55;
+        font-size: 0.84rem;
+        line-height: 1.5;
       }
 
-      .helper-item a {
+      .helper-strip a {
         color: var(--accent-strong);
         font-family: var(--font-mono);
-        font-size: 0.84rem;
+        font-size: 0.8rem;
         font-weight: 600;
         overflow-wrap: anywhere;
       }
 
-      .helper-item.is-warning {
-        border-color: color-mix(in oklab, var(--danger) 18%, var(--border) 82%);
-        background: color-mix(in oklab, var(--surface) 82%, var(--danger) 4%);
-      }
-
-      .helper-item.is-warning strong {
-        color: var(--danger);
-      }
-
       .input-shell {
-        padding: 14px;
+        padding: 10px;
         border: 1px solid var(--border);
         border-radius: var(--radius-md);
         background: var(--surface-soft);
@@ -383,39 +329,17 @@
         background: var(--accent-soft);
       }
 
-      .input-shell-head {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 12px;
-        margin-bottom: 12px;
-      }
-
-      .input-shell-head strong {
-        display: block;
-        margin-bottom: 4px;
-        font-size: 0.92rem;
-        font-weight: 700;
-      }
-
-      .input-shell-head p {
-        margin: 0;
-        color: var(--text-muted);
-        font-size: 0.88rem;
-        line-height: 1.5;
-      }
-
       .input-actions {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
       }
 
       .field-label {
         display: block;
-        margin-bottom: 8px;
-        font-size: 0.84rem;
+        margin-bottom: 6px;
+        font-size: 0.8rem;
         font-weight: 700;
         color: var(--text-soft);
       }
@@ -427,9 +351,9 @@
       textarea {
         display: block;
         width: 100%;
-        min-height: 420px;
+        min-height: 390px;
         resize: vertical;
-        padding: 14px;
+        padding: 12px;
         border: 1px solid var(--border);
         border-radius: var(--radius-md);
         background: var(--surface);
@@ -446,25 +370,26 @@
 
       .notice {
         margin: 0 0 12px;
-        padding: 12px 14px;
+        padding: 10px 12px;
         border: 1px solid color-mix(in oklab, var(--warning) 20%, var(--border) 80%);
         border-radius: var(--radius-md);
         background: color-mix(in oklab, var(--surface) 88%, var(--warning) 8%);
         color: color-mix(in oklab, var(--text) 80%, var(--warning) 20%);
-        font-size: 0.88rem;
-        line-height: 1.5;
+        font-size: 0.84rem;
+        line-height: 1.45;
       }
 
       .summary {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
         margin-bottom: 12px;
       }
 
       .stat {
-        min-height: 80px;
-        padding: 12px;
+        flex: 1 1 120px;
+        min-height: auto;
+        padding: 8px 10px;
         border: 1px solid var(--border);
         border-radius: var(--radius-md);
         background: var(--surface-muted);
@@ -472,16 +397,16 @@
 
       .stat-label {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 6px;
         color: var(--text-soft);
-        font-size: 0.76rem;
+        font-size: 0.72rem;
         font-weight: 700;
         letter-spacing: 0.04em;
         text-transform: uppercase;
       }
 
       .stat-value {
-        font-size: 1.15rem;
+        font-size: 0.98rem;
         font-weight: 700;
         line-height: 1.2;
         overflow-wrap: anywhere;
@@ -489,7 +414,7 @@
 
       .accounts {
         overflow: auto;
-        max-height: 212px;
+        max-height: 144px;
         margin-bottom: 12px;
         border: 1px solid var(--border);
         border-radius: var(--radius-md);
@@ -567,11 +492,11 @@
       }
 
       .status-line {
-        min-height: 22px;
-        margin-top: 10px;
+        min-height: 20px;
+        margin-top: 6px;
         color: var(--text-muted);
-        font-size: 0.88rem;
-        line-height: 1.5;
+        font-size: 0.84rem;
+        line-height: 1.45;
       }
 
       .status-line.is-ok {
@@ -594,16 +519,12 @@
       }
 
       @media (max-width: 980px) {
-        .app-header,
         .toolbar-head,
         .workspace {
           grid-template-columns: 1fr;
         }
 
-        .header-side,
-        .meta-row,
         .actions {
-          justify-items: start;
           justify-content: flex-start;
         }
       }
@@ -611,15 +532,15 @@
       @media (max-width: 720px) {
         .app {
           width: min(100vw - 20px, 1280px);
-          padding-top: 16px;
+          padding-top: 14px;
         }
 
         .app-header {
-          margin-bottom: 12px;
+          margin-bottom: 10px;
         }
 
-        .helper-list,
         .summary {
+          display: grid;
           grid-template-columns: 1fr;
         }
 
@@ -653,7 +574,7 @@
         }
 
         textarea {
-          min-height: 300px;
+          min-height: 280px;
         }
       }
     </style>
@@ -662,38 +583,18 @@
     <main class="app">
       <header class="app-header">
         <div>
-          <p class="eyebrow">Local Session Converter</p>
-          <h1>把 session JSON 直接转换成可导入配置</h1>
+          <h1>把 session JSON 转成可导入配置</h1>
           <p class="app-lead">
-            用于本地处理 ChatGPT Web session、Codex auth.json 和相关账号 JSON。粘贴、导入、转换、复制或下载都在浏览器内完成，不上传数据。
+            粘贴或导入 JSON，立即生成目标格式。全程本地处理，不上传数据。
           </p>
-        </div>
-        <div class="header-side">
-          <div class="meta-row" aria-label="处理方式">
-            <span class="meta-chip">浏览器本地解析</span>
-            <span class="meta-chip">不上传 token</span>
-            <span class="meta-chip">支持多文件</span>
-          </div>
-          <a
-            class="github-link"
-            href="https://github.com/gtxx3600/GPTSession2CPAandSub2API"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="打开原始开源仓库"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.24c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.5 11.5 0 0 1 12 5.78c1.02 0 2.05.14 3.01.41 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" />
-            </svg>
-            <span>查看原始仓库</span>
-          </a>
         </div>
       </header>
 
       <section class="toolbar" aria-label="输出控制">
         <div class="toolbar-head">
           <div class="toolbar-copy">
-            <strong>输出格式</strong>
-            <p id="format-note" class="format-note">sub2api 适合批量导入账号池，输出 `accounts` 数组和空代理列表。</p>
+            <strong>格式</strong>
+            <p id="format-note" class="format-note">sub2api：输出 `accounts` 数组。</p>
           </div>
           <div class="actions">
             <button class="button button-secondary" id="copy-output" type="button" disabled>复制输出</button>
@@ -714,33 +615,17 @@
           <div class="panel-head">
             <div>
               <h2 id="input-title">输入</h2>
-              <p>先粘贴 session JSON，或选择 / 拖入 `.json` 文件。页面会自动识别可转换对象。</p>
+              <p>粘贴 JSON 或导入文件。</p>
             </div>
           </div>
 
-          <div class="helper-list">
-            <div class="helper-item">
-              <strong>获取来源</strong>
-              <p>
-                登录 ChatGPT 后打开
-                <a href="https://chatgpt.com/api/auth/session" target="_blank" rel="noreferrer">https://chatgpt.com/api/auth/session</a>
-                ，复制整段 JSON。
-              </p>
-            </div>
-            <div class="helper-item is-warning">
-              <strong>敏感提醒</strong>
-              <p>这里的 access token、session token、refresh token 都等同登录凭证。只在本机操作，不要转发给别人。</p>
-            </div>
+          <div class="helper-strip">
+            <p>来源：登录 ChatGPT 后打开 <a href="https://chatgpt.com/api/auth/session" target="_blank" rel="noreferrer">/api/auth/session</a> 复制 JSON。</p>
+            <p>提醒：token 等同登录凭证，只在本机操作。</p>
           </div>
 
           <input class="hidden" id="file-input" type="file" accept=".json,application/json" multiple />
           <div class="input-shell" id="drop-zone" aria-label="拖拽上传区域">
-            <div class="input-shell-head">
-              <div>
-                <strong>支持粘贴、拖放和文件选择</strong>
-                <p>支持单个 session、数组、嵌套对象，以及已经导出的 Codex auth.json。</p>
-              </div>
-            </div>
             <div class="input-actions">
               <button class="button button-secondary" id="pick-files" type="button">选择文件</button>
               <button class="button button-secondary" id="load-example" type="button">填入示例结构</button>
@@ -761,12 +646,12 @@
           <div class="panel-head">
             <div>
               <h2 id="output-title">输出</h2>
-              <p id="output-subtitle">当前输出为 sub2api 导入 JSON。</p>
+              <p id="output-subtitle">生成后可复制或下载。</p>
             </div>
           </div>
 
           <p class="notice" id="cpa-notice">
-            ChatGPT Web session 一般没有 `refresh_token`；缺少真实 `id_token` 时会构造 CPA、Cockpit、Codex auth.json 可解析的占位 claims，实际调用仍依赖 access token。
+            Web session 通常没有 `refresh_token`；缺少 `id_token` 时会生成占位 claims。
           </p>
 
           <div class="summary" aria-label="转换统计">
@@ -814,6 +699,21 @@
           <div class="status-line" id="output-status" role="status" aria-live="polite">暂无输出。</div>
         </section>
       </section>
+
+      <div class="app-footer">
+        <a
+          class="github-link"
+          href="https://github.com/Tendo33/GPT-Session-Converter"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="打开原始开源仓库"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.24c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.5 11.5 0 0 1 12 5.78c1.02 0 2.05.14 3.01.41 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.83.58A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" />
+          </svg>
+          <span>原始仓库</span>
+        </a>
+      </div>
     </main>
 
     <script src="./session-converter.js"></script>
@@ -830,11 +730,11 @@
         };
 
         const FORMAT_NOTES = {
-          sub2api: "sub2api 适合批量导入账号池，输出 `accounts` 数组和空代理列表。",
-          cpa: "CPA 输出偏单账号结构，字段会尽量补全 `id_token`、`session_token` 和计划信息。",
-          cockpit: "Cockpit 输出保留 `access_token`、`refresh_token`、`account_note` 这一类偏管理台字段。",
-          "9router": "9router 输出更接近 provider 记录，可直接保留 `providerSpecificData`、状态和时间戳。",
-          "codex-auth": "Codex auth.json 输出对齐 Codex 的 `auth.json` 结构，适合直接落盘到本地配置。",
+          sub2api: "sub2api：输出 `accounts` 数组。",
+          cpa: "CPA：单账号导入结构。",
+          cockpit: "Cockpit：保留 token 和备注字段。",
+          "9router": "9router：保留 provider 状态字段。",
+          "codex-auth": "Codex auth：输出 `auth.json` 结构。",
         };
 
         const state = {
@@ -991,7 +891,7 @@
         function syncFormatSurface() {
           document.body.dataset.format = state.format;
           elements.statFormat.textContent = OUTPUT_LABELS[state.format];
-          elements.outputSubtitle.textContent = `当前输出为 ${OUTPUT_LABELS[state.format]} 导入 JSON。`;
+          elements.outputSubtitle.textContent = `当前格式：${OUTPUT_LABELS[state.format]}`;
           elements.formatNote.textContent = FORMAT_NOTES[state.format];
           elements.cpaNotice.style.display = ["cpa", "cockpit", "codex-auth"].includes(state.format) ? "block" : "none";
         }
